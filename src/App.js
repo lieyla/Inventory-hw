@@ -1,22 +1,19 @@
+import logo from './logo.svg';
 import './App.css';
-import Jeep from './Jeep';
-import Honda from './Honda';
-import Toyota from './Toyota';
-import Ford from './Ford';
+import Ford from './Ford'
+import Honda from './Honda'
+import Toyota from './Toyota'
+import Jeep from './Jeep'
+function App(){
 
-
-
-function App() {
-  return (
-    <div className="App">
-      <h1>My Cars</h1>
-      <Jeep/>
-      <Honda/>
-      <Toyota/>
-<Ford/>
+  return(
+    <div>
+      
+<Ford startingCount={15000}/>
+<Honda startingCount={20000}/>
+<Toyota startingCount={25000}/>
+<Jeep startingCount={10000}/>
 
     </div>
-  );
-}
-
-export default App;
+  )
+  }export default App;
